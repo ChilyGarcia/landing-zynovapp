@@ -1,5 +1,6 @@
 import { FiArrowRight } from "react-icons/fi";
 import Image from "next/image";
+import Divider from "./Divider";
 
 export default function FuncionesPrincipalesSection() {
     return (
@@ -23,7 +24,7 @@ export default function FuncionesPrincipalesSection() {
                         </span>{" "}
                         <span className="text-gray-900">PRINCIPALES</span>
                     </h2>
-                    <div className="w-32 h-1 bg-gradient-to-r from-white to-[#8B5CF6] mx-auto mb-6"></div>
+                    <Divider width="w-32" className="bg-gradient-to-r from-[#F184FA] to-[#773FFF]" />
                     <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                         Plataforma integral que automatiza la gestión clínica y el análisis
                         con IA, optimizando procesos y mejorando la toma de decisiones

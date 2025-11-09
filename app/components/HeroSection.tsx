@@ -58,10 +58,10 @@ export default function HeroSection() {
                     {/* Floating white cards - positioned relative to content */}
                     <div className="relative mt-8 md:mt-0">
                         {/* Gradient background behind cards */}
-                        <div className="absolute -top-4 h-[200px] md:h-[250px] bg-gradient-to-b from-white via-[#F5EBFF] to-[#E9D5FF] rounded-3xl md:rounded-[40px] -z-10" style={{ width: 'calc(100vw - 60px)', marginLeft: 'calc(-50vw + 50% + 30px)' }}></div>
+                        <div className="absolute -top-4 h-[200px] md:h-[250px] bg-gradient-to-b from-white via-[#F5EBFF] to-[#E9D5FF] rounded-3xl md:rounded-[40px] -z-10" style={{ width: 'calc(100vw - 16px)', marginLeft: 'calc(-50vw + 50% + 8px)' }}></div>
 
                         {/* Large card - center */}
-                        <div className="mx-auto w-[85%] max-w-[600px] h-[180px] md:h-[320px] bg-white/80 backdrop-blur-sm rounded-2xl md:rounded-3xl shadow-2xl"></div>
+                        <div className="mx-auto w-[95%] max-w-[600px] h-[180px] md:h-[320px] bg-white/80 backdrop-blur-sm rounded-2xl md:rounded-3xl shadow-2xl"></div>
 
                         {/* Small card - top right */}
                         <div className="absolute right-0 -top-2 md:-top-12 md:right-[10%] w-[30%] md:w-[240px] h-[100px] md:h-[180px] bg-white/80 backdrop-blur-sm rounded-2xl md:rounded-3xl shadow-2xl"></div>
@@ -72,10 +72,12 @@ export default function HeroSection() {
                 </div>
             </div>
 
-            {/* Double chevron indicator - responsive positioning */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 bottom-8 md:top-[1000px] md:bottom-auto flex flex-col items-center gap-1 z-10">
-                <FiChevronDown className="w-6 h-6 md:w-8 md:h-8 text-[#7C3AED]" />
-                <FiChevronDown className="w-6 h-6 md:w-8 md:h-8 text-[#7C3AED] -mt-3 md:-mt-4" />
+            {/* Flecha hacia abajo */}
+            <div className="flex justify-center mt-8">
+                <div className="text-[#5B4BDE]">
+                    <FiChevronDown className="text-4xl animate-bounce" strokeWidth={2} />
+                    <FiChevronDown className="text-4xl -mt-6 animate-bounce" style={{ animationDelay: '0.2s' }} strokeWidth={2} />
+                </div>
             </div>
         </section>
     );
