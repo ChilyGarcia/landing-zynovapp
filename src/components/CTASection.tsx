@@ -16,9 +16,13 @@ const CTASection = () => {
             ¿Listo para transformar tu laboratorio?
           </h2>
           <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-            Únete a los laboratorios que ya optimizan sus procesos con inteligencia artificial.
+            Únete a los laboratorios que ya optimizan sus procesos con
+            inteligencia artificial.
           </p>
-          <a href="#" className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-8 py-3.5 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-glow">
+          <a
+            href="https://wa.me/573102740308?text=Quiero%20más%20información"
+            className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-8 py-3.5 rounded-lg font-medium hover:opacity-90 transition-opacity shadow-glow"
+          >
             Comenzar ahora <ArrowRight size={18} />
           </a>
         </motion.div>
