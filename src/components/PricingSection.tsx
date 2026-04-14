@@ -102,7 +102,7 @@ const PricingSection = () => {
                 ))}
               </ul>
               <a
-                href="#"
+                href={plan.link}
                 className={`block text-center py-3 rounded-lg font-medium text-sm transition-all ${
                   plan.featured
                     ? "bg-gradient-primary text-primary-foreground hover:opacity-90"
